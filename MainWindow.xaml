@@ -23,7 +23,7 @@
                        FontFamily="Times New Roman" Foreground="#FFB7A9A9"/>
 
             <Button x:Name="Btnuser" Width="130" Margin="20,0,0,0" 
-                    Background="{x:Null}" Content="Cheng USER" 
+                    Background="{x:Null}" Content="Change USER" 
                     FontSize="16" FontFamily="Tahoma" Foreground="#FF01FF05" Click="Btnuser_Click"/>
             <TextBlock Width="170" Text="Choose a worker -" 
                        FontSize="20" Margin="15,0,0,0" Padding="5,0,0,0" 
