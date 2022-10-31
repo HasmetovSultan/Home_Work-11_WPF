@@ -1,10 +1,12 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.Azure.Amqp.Framing;
+using Newtonsoft.Json;
 using System;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Markup;
 
 namespace Home_Work_11_WPF
 {
@@ -13,14 +15,15 @@ namespace Home_Work_11_WPF
     /// </summary>
     public partial class MainWindow : Window
     {        
-        public static ObservableCollection<Manager> _workers { get; set; } = new ObservableCollection<Manager>();        
+        public static ObservableCollection<Manager> _workers { get; set; } = new ObservableCollection<Manager>();
+                
         public string path = "Workers.json";
         public MainWindow()
         {
             InitializeComponent();
             ExistsFileCreate();
             Loger.Mwin = this;
-            ReadFileJson();
+            ReadFileJson();            
             CBox.ItemsSource = _workers;
         }
 

@@ -1,6 +1,9 @@
 ﻿
+using PropertyChanged;
+
 namespace Home_Work_11_WPF
 {
+    [AddINotifyPropertyChangedInterface]
     public class Manager : Consultant
     {
         public string Forcombobox { get; set; }

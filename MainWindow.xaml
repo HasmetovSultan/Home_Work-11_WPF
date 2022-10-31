@@ -33,7 +33,7 @@
                       Margin="10,0,0,0" SelectionChanged="CBox_SelectionChanged">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>
-                        <ComboBoxItem Content="{Binding Path=Forcombobox}"></ComboBoxItem>
+                        <ComboBoxItem Content="{Binding Forcombobox}" IsHitTestVisible="False"/>
                     </DataTemplate>
                 </ComboBox.ItemTemplate>
             </ComboBox>
