@@ -88,7 +88,7 @@ namespace Home_Work_11_WPF
                 manager.Passportseries.LogPassportseries = TBPassportseries.Text;
                 manager.Passportnumber.LogPassportnumber = TBPassportnumber.Text;
 
-                manager.Forcombocox = $"{TBName.Text} {TBPatronymic.Text} {TBPatronymic.Text}";
+                manager.Forcombobox = $"{TBSurname.Text} {TBName.Text} {TBPatronymic.Text}";
 
 
 
@@ -134,7 +134,7 @@ namespace Home_Work_11_WPF
                                 if (_workers[i].Passportnumber.LogPassportnumber != TBPassportnumber.Text)
                                 { _workers[i].Passportnumber.LogPassportnumber = TBPassportnumber.Text; }
 
-                                _workers[i].Forcombocox = $"{TBName.Text} {TBPatronymic.Text} {TBPatronymic.Text}";
+                                _workers[i].Forcombobox = $"{TBSurname.Text} {TBName.Text} {TBPatronymic.Text}";
                                 ClearTextBox();
                                 SaveWorker(_workers);
                                 MessageBox.Show("Работник изменён!");

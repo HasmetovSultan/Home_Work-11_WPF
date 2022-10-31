@@ -3,7 +3,7 @@ namespace Home_Work_11_WPF
 {
     public class Manager : Consultant
     {
-        public string Forcombocox { get; set; }
+        public string Forcombobox { get; set; }
         public string Id { get; set; }        
 
         public CName Name = new CName();
