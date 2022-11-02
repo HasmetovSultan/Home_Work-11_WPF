@@ -23,7 +23,7 @@ namespace Home_Work_11_WPF
             InitializeComponent();
             ExistsFileCreate();
             Loger.Mwin = this;
-            ReadFileJson();            
+            ReadFileJson();
             CBox.ItemsSource = _workers;
         }
 
