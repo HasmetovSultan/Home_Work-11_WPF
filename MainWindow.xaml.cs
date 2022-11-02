@@ -72,6 +72,7 @@ namespace Home_Work_11_WPF
         /// </summary>
         private void ClearTextBox()
         {
+            TBalert.Text = "";
             TBName.Text = "";
             TBSurname.Text = "";
             TBPatronymic.Text = "";
